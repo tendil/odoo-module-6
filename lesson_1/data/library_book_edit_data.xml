@@ -1,0 +1,6 @@
+<odoo noupdate="1">
+    <record id="school_module_6_1.library_book_record_2" model="library.book">
+        <field name="name">Сліди на піску</field>
+    </record>
+    <delete id="school_module_6_1.library_book_record_3" model="library.book"/>
+</odoo>

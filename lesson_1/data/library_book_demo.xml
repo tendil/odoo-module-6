@@ -1,0 +1,26 @@
+<odoo noupdate="1">
+    <record id="library_book_record_1" model="library.book">
+        <field name="name">Кобзар</field>
+        <field name="reader_id" ref="res_partner_customer"/>
+        <field name="taken_date">2024-08-15</field>
+        <field name="user_id" ref="base.user_demo"/>
+        <field name="active" eval="True"/>
+        <field name="category_id" ref="library_category_1"/>
+    </record>
+    <record id="library_book_record_2" model="library.book">
+        <field name="name">Одіссея</field>
+        <field name="reader_id" ref="res_partner_customer"/>
+        <field name="taken_date">2024-08-15</field>
+        <field name="user_id" ref="base.user_demo"/>
+        <field name="active" eval="True"/>
+        <field name="category_id" ref="library_category_2"/>
+    </record>
+    <record id="library_book_record_3" model="library.book">
+        <field name="name">Подорож до центра Землі</field>
+        <field name="reader_id" ref="res_partner_customer"/>
+        <field name="taken_date">2024-08-15</field>
+        <field name="user_id" ref="base.user_demo"/>
+        <field name="active" eval="True"/>
+        <field name="category_id" ref="library_category_3"/>
+    </record>
+</odoo>

@@ -1,0 +1,13 @@
+<odoo noupdate="1">
+    <record id="res_bank_primary" model="res.bank">
+        <field name="name">Universal Bank</field>
+        <field name="bic">30530248</field>
+        <field name="country" ref="base.ua" />
+    </record>
+
+    <record id="school_module_6_1.res_partner_example" model="res.partner">
+        <field name="bank_ids" eval="[Command.create({
+            'acc_number': 'UA5678900000023456',
+            'bank_id': ref('res_bank_primary')})]"/>
+    </record>
+</odoo>

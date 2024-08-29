@@ -1,0 +1,17 @@
+<odoo noupdate="1">
+
+    <record id="author_birthdays_ir_cron" model="ir.cron" forcecreate="True">
+        <field name="name">Library: Compute author birthdays</field>
+        <field name="user_id" ref="base.user_admin"/>
+        <field name="model_id" ref="model_library_author"/>
+        <field name="state">code</field>
+        <field name="code">model.calculate_author_anniversary()</field>
+        <field name="interval_number">2</field>
+        <field name="interval_type">weeks</field>
+        <field name="numbercall">-1</field>
+        <field name="nextcall" eval="(datetime.now() + timedelta(days=2)).strftime('%Y-%m-%d 00:00:00')"/>
+        <field name="doall" eval="False" />
+        <field name="active" eval="True" />
+    </record>
+
+</odoo>

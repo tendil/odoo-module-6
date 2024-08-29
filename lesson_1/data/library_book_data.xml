@@ -1,0 +1,11 @@
+<odoo noupdate="1">
+    <record id="library_category_1" model="library.book.category" forcecreate="True">
+        <field name="name">Sonnet</field>
+    </record>
+    <record id="library_category_2" model="library.book.category" forcecreate="True">
+        <field name="name">Exploration</field>
+    </record>
+    <record id="library_category_3" model="library.book.category" forcecreate="True">
+        <field name="name">Science Fiction</field>
+    </record>
+</odoo>
